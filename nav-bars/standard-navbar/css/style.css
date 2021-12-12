@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@400;700;900&display=swap');
+
+/*
+1. 203, 92%, 75%
+2. 260, 64%, 43%
+3. 220, 100%, 29%
+ */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'lato', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.ns-std-nav {
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    background-color: hsl(220, 100%, 29%);
+}
+
+.ns-brand-ctr {
+    width: 26vw;
+    position: absolute;
+    left: 5rem;
+}
+
+.ns-links-ctr {
+    width: 74vw;
+    text-align: right;
+    position: absolute;
+    right: 5rem;
+}
+
+.ns-links-res-ctr {
+    display: block !important;
+    background-color: hsl(260, 64%, 43%);
+    top: 4.4rem;
+    height: 100vh;
+    text-align: center;
+    right: 0;
+}
+
+.ns-item {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ns-brand-itm {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.ns-links-itm {
+    margin: 0 0 0 1rem;
+}
+
+.ns-links-itm:hover {
+    border-bottom: 2px solid white;
+}
+
+.ns-bars {
+    font-size: 20px;
+    position: absolute;
+    right: 5rem;
+    display: none;
+}
+
+@media only screen and (max-width: 910px) {
+    .ns-links-itm::after, .ns-links-itm::before {
+        content: '';
+        display: block;
+        margin: 1.4rem 0;
+    }
+
+    .ns-links-ctr {
+        display: none;
+    }
+
+    .ns-bars {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ns-brand-ctr {
+        left: 3rem;
+    }
+
+    .ns-bars {
+        right: 3rem;
+    }
+
+}
+
+
